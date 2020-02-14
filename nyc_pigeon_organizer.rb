@@ -3,7 +3,7 @@ def nyc_pigeon_organizer(pigeon_data)
   pigeon_data.each do |key, value|
     value.each do |k,v|
       v.each do |names|
-        new[names][key] ||= {}
+        new[names] ||= {}
         new[names][key] ||= []
         new[names][key].push(k.to_s)
       end
